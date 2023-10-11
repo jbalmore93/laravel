@@ -1,20 +1,20 @@
 @extends('layouts.app')
 @section('titulo','Eliminar Registro')
 @section('contenido')
-<div class="card" style="width: 40rem;">
+<div class="card" style="margin-left: 300px;width: 40rem;">
 <div class="card-header center">
 Eliminar Servicio
 </div>
 <div class="card-body">
 <div class="form-group">
   <label class="form-label">Nombre de Categoria</label>
-  <input type="text" class="form-control" name="nombre_servicio" value="{{$categoria->nombre}}" disabled>
+  <input type="text" class="form-control" name="nombre" value="{{$categoria->nombre}}" disabled>
 </div>
 <div class="form-group">
   <label class="form-label">Descripcion de la Categoria</label>
-  <input type="text" class="form-control" name="descripcion_servicio" value="{{$categoria->descripcion}}"  disabled>
+  <input type="text" class="form-control" name="descripcion" value="{{$categoria->descripcion}}"  disabled>
 </div>
-<div class="form-group">
+<div class="form-group m-2">
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
   Eliminar
 </button>

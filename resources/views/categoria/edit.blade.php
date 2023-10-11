@@ -1,7 +1,8 @@
 @extends('layouts.app')
+<link ref="stylesheet" href="asset{{'resources/app.css'}}">
 @section('titulo','Editar Registro')
 @section('contenido')
-<div class="card" style="width: 40rem;">
+<div class="card" id="edit" style="margin-left: 300px; width: 40rem;">
 <div class="card-header center">
 Editar Categoria
 </div>
